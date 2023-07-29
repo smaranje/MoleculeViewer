@@ -1,0 +1,160 @@
+/* Import Montserrat font */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('path/to/montserrat.woff2') format('woff2'),
+         url('path/to/montserrat.woff') format('woff');
+    /* Add other formats if available (e.g., ttf, eot) */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 1rem; /* Add padding to the body to separate content from the edges */
+    background-color: #f0f0f0; /* Change the background color */
+}
+
+/* Header styles */
+header {
+    background-color: #007b7f; /* Change header background color */
+    padding: 1rem;
+    text-align: center; /* Center align the header content */
+}
+
+h1 {
+    font-size: 3rem; /* Increase the font size */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Improve text shadow */
+    margin-bottom: 0.5rem; /* Reduce the margin */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center; /* Center align the navigation links */
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 1.5rem; /* Increase the spacing between navigation links */
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 3.5rem;
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #00a0a4; /* Change the hover effect color */
+}
+
+/* Main content styles */
+main {
+    margin: 1rem auto; /* Center align the main content */
+    max-width: 800px; /* Limit the maximum width */
+}
+
+section.welcome {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #007b7f;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1rem 0;
+    color: #444; /* Darken the text color for better contrast */
+}
+
+/* Form styles */
+form {
+    margin: 1rem;
+}
+
+input[type="button"] {
+    padding: 0.5rem 1.5rem; /* Increase padding for buttons */
+    margin: 0.5rem 0;
+    background-color: #007b7f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Add rounded corners to buttons */
+}
+
+input[type="button"]:hover {
+    background-color: #00a0a4; /* Change hover effect color */
+}
+
+/* Table styles */
+th, td {
+    border: 1px solid #007b7f;
+    padding: 0.5rem 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Other styles */
+#addElement {
+    display: inline-block;
+    float: left;
+    margin-right: 10rem;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+input[type="number"]:read-only {
+    background-color: #f0f0f0;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #fff;
+    border: 2px solid #007b7f;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background: #007b7f;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #007b7f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #00a0a4;
+}
